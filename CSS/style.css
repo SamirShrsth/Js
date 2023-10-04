@@ -1,0 +1,436 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjord+One&family=Lora&display=swap');
+body{
+    margin: 0px;
+    padding: 0px;
+    background: rgb(25, 25, 25);
+}
+*{
+    font-family: 'Open Sans', sans-serif;
+}
+p{
+    color: rgb(216, 216, 216);
+}
+/******** HEADER Starts *******/
+header .heading{
+    left: 12%;
+    top: 0%;
+    position: fixed;
+    width: 88%;
+    height: 100px;
+    background-color: #151515;
+}
+header .heading .searchbar{
+    position: relative;
+    top: 35%;
+    left: 5%;
+    width: 25%;
+}
+header .heading .searchbar img{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+    margin-top: 4px;
+}
+header .heading .searchbar input{
+    background-color: #383838;
+    border-radius: 20px;
+    border-color: #383838;
+    border: 1px solid #383838;
+    width: 100%;
+    height: 25px;
+    font-family: fantasy;
+    text-align: center;
+}
+header .heading .headnav{
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    width: 20%;
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+}
+header .heading .headnav p{
+    margin-left: 10px;
+}
+header .heading .headnav a{
+    text-decoration: none;
+}
+header .heading .headnav img{
+    width: 25px;
+    height: 20px;
+    margin-left: 9%;
+    position: relative;
+    cursor: pointer;
+}
+.dropbtn {
+    background-color: #151515;
+    color: rgb(216, 216, 216);;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+  
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #646464;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius: 5px;
+}
+  
+.dropdown-content a {
+    color: rgb(216, 216, 216);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+}
+.dropdown-content a:hover {background-color: #383838}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+.dropdown:hover .dropbtn {
+    background-color: #151515;
+}
+/******** HEADER Ends *******/
+
+/******** SIDEBAR Starts *******/
+aside .sidebar{
+    left: 0px;
+    top: 0px;
+    position: fixed;
+    width: 12%;
+    height: 100%;
+    background-color: #151515;
+}
+aside .sidebar .logo a img{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    margin-top: 25%;
+
+}
+aside .sidebar .logo a{
+    display: flex;
+    justify-content: center;
+}
+aside .sidebar .logo{
+    margin: auto;
+    width: 100px;
+    height: 150px;
+}
+aside .sidebar .sidenav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+aside .sidebar .sidenav a{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    /* border: 1px solid #383838;
+    background-color: #383838; */
+    border-radius: 10px;
+    width: 80%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+aside .sidebar .sidenav .home{
+    background-color: #646464;
+}
+aside .sidebar .sidenav a > *{
+    width: 50%;
+}
+aside .sidebar .sidenav a img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+aside .sidebar .sidenav a p{
+    color: rgb(216, 216, 216);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    margin: 0px;
+}
+aside .sidebar hr{
+    width: 80%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+aside .sidebar .sidenav a:hover{
+    background-color: #646464;
+}
+/******** SIDEBAR Ends *******/
+/******** Main section Starts *******/
+section .container{
+    display: flex;
+    z-index: -1;
+    position: absolute;
+    width: 88%;
+    top: 100px;
+    left: 12%;
+    min-height:calc(100vh - 100px);
+}
+/***** Image Sliderr ******/
+#slider{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 65vh;
+    margin-top: 8%;
+    margin-left: 3%;
+    justify-content: center;
+}
+.container .top-feature{
+    display: flex;
+    position: absolute;
+    color: rgb(216, 216, 216);
+    width: 95%;
+    margin-left: 3%;
+    margin-right: 2%;
+    margin-top: 2%;
+    justify-content: space-between;
+}
+.container .top-feature h1{
+    font-size: 1.rem;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+}
+.container .top-feature h1:last-of-type{
+    opacity: 0.5;
+}
+#slider .mainimg{
+    position: absolute;
+    width: 100%;
+    height: 65vh;
+    border-radius: 20px;
+    display: none;
+}
+#slider .mainimg:first-of-type{
+    display: block;
+}
+button{
+    border: 0px;
+    background-color: transparent;
+    border-radius: 20px;
+    justify-content: center;
+    width: 15%;
+    height: 10vh;
+    cursor: pointer;
+}
+button:hover{
+    opacity: 0.75;
+}
+.buttons{
+    position: absolute;
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    max-height: 10vh;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.buttons button img{
+    width: 70%;
+    height: 100%;
+}
+.buttons button:last-of-type img{
+    transform: rotate(180deg);
+}
+/***** Image Sliderr End ******/
+section .container .sec-images{
+    display: flex;
+    position: relative;
+    width: 25%;
+    height: 65vh;
+    margin-top: 8%;
+    margin-left: 1%;
+    margin-right: 1%;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+section .container .sec-images a{
+    display: flex;
+    text-decoration: none;
+    height: 18%;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    font-family: 'Open Sans', sans-serif;
+}
+.sec-images a.highlighted,
+.sec-images a:hover { /* Apply highlighting also on hover */
+    border-radius: 20px;
+    border: 1px solid #383838;
+    background-color: #383838; /* You can adjust the styling as needed */
+}
+section .container .sec-images a img{
+
+    height: 50px;
+    width: 65px;
+}
+/* section .container .sec-images a:nth-last-child(-n+2){
+    display: none;
+} */
+/******** Main section Ends *******/
+@media only screen and (max-width: 951px){
+    aside .sidebar .sidenav a img{
+        margin-right: 0;
+    }
+    aside .sidebar .sidenav a p{
+        font-size: 10px;
+    }
+    aside .sidebar .logo{
+        width: 89px;
+        height: 100px;
+    }
+    aside .sidebar .logo a img{
+        width: 80px;
+        height: 80px;
+    }
+    header .heading .searchbar input{
+        font-size: 10px;
+    }
+    .container .top-feature{
+        width: 104%;
+    }
+
+}
+@media only screen and (max-width: 600px){
+    header .heading .searchbar input{
+        font-size: 8px;
+        padding-left: 0px;
+    }
+    header .heading .headnav{
+        left: 50%;
+        font-size: 10px;
+    }
+    header .heading .headnav .dropdown button{
+        font-size: 10px;
+    }
+    header .heading .searchbar{
+        left: 7%;
+    }
+    header .heading .searchbar img{
+        width: 15px;
+        height: 15px;
+        margin-top: 5%;
+        margin-left: 5px;
+        display: none;
+    }
+    header .heading .headnav{
+        left: 54%;
+        width: 40%;
+        height: 25px;
+    }
+    section .container{
+        flex-direction: column;
+        align-items: center;
+    }
+    section .container #slider{
+        height: 25vh;
+        width: 90%;
+        margin-left: 0;
+        margin-top: 12%;
+    }
+    section .container .top-feature{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    section .container .top-feature .feature-date{
+        display: none;
+    }
+    section .container #slider .buttons button{
+        height: 5vh;
+    }
+    section .container #slider .mainimg{
+        height: 100%;
+    }
+    section .container .sec-images{
+        width: 90%;
+        margin: 0;
+        flex-direction: row;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+        height: unset;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    section .container .sec-images a:nth-last-child(-n+2){
+        display: flex;
+    }
+    section .container .sec-images a p{
+        display: none;
+    }
+    section .container .sec-images a{
+        font-size: 0.8rem;
+    }
+    section .container .sec-images a > *{
+        margin-left: 0;
+    }
+    section .container .sec-images a img{
+        height: 65px;
+        width: 120px;
+        border-radius: 10px;
+    }
+    aside .sidebar .logo{
+        margin-top: 18px;
+        width: 62px;
+        height: 80px;
+    }
+    aside .sidebar hr{
+        display:none;
+    }
+    aside .sidebar .logo a img{
+        width: 40px;
+        height: 40px;
+    }
+    aside .sidebar .sidenav a p{
+        display: none;
+    }
+    aside .sidebar .sidenav a img{
+        width: 20px;
+        height: 20px;
+    }
+    section .container .image{
+        max-width: 80%;
+    }
+    section .container .arrows{
+        display: flex;
+        justify-content: center;
+        top: 55vh;
+    }
+    section .container .arrows img{
+        border: 1px solid #151515;
+        border-radius: 10px;
+        margin: 10px;
+        background-color: #383838;
+    }
+    section .container .image img{
+        height: 30vh;
+    }
+    aside .sidebar .sidenav a{
+        justify-content: center;
+        margin-bottom: 0;
+        width: 70%;
+    }
+
+}

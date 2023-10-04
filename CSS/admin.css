@@ -1,0 +1,166 @@
+h1 , h2, h3{
+    margin: 0;
+}
+header .heading .headnav{
+    width: 38%;
+    justify-content: flex-end;
+    gap: 20px;
+}
+header .heading .headnav a:first-of-type img{
+    height: 23px;
+    width: 30px;
+    top: 2px;
+}
+aside .sidebar .sidenav .library{
+    background-color: transparent;
+}
+aside .sidebar .sidenav a p{
+    font-size: 12px;
+}
+.container .login-container{
+    height: 45vh;
+}
+.container .dash-container{
+    width: 95%;
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.container .dash-container .dash{
+    display: flex;
+    justify-content: space-between;
+}
+.container .dash-container .dash input{
+    background-color: #646464;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    cursor: pointer;
+    color: #D8D8D8;
+}
+.container .dash-container .sales-container{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    justify-content: space-between;
+}
+.container .dash-container .sales-container .sales{
+    height: 100%;
+    width: 24%;
+    background-image: linear-gradient(to right,#273143, #2584F3);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.container .dash-container .sales-container .sales .amount{
+    color: white;
+    margin-left: 10px;
+}
+.container .dash-container .sales-container .sales .amount span{
+    font-size: 13px;
+}
+.container .dash-container .sales-container .sales .sales-icon{
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+}
+.container .dash-container .sales-container .sales .sales-icon img{
+    height: 100%;
+    width: 100%;
+    opacity: 0.7;
+}
+.container .dash-container .graph{
+    display: flex;
+    height: 60vh;
+    justify-content: space-between;
+    gap: 20px;
+}
+.container .dash-container .graph .chart{
+    width: 70%;
+}
+.container .dash-container .graph .loc{
+    width: 100%;
+    height: 100%;
+}
+.container .dash-container .graph .resp1 .day-sale img{
+    display: none;
+}
+.container .dash-container .graph img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.container .dash-container .graph .summary{
+    width: 75%;
+}
+footer{
+    width: 100%;
+    height: 75px;
+    margin-top: 20px;
+    background-color: #273143;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer span{
+    font-size: 12px;
+}
+@media only screen and (max-width:950px){
+    .container .dash-container .graph {
+        height: 35vh;
+    }
+    aside .sidebar .sidenav a p {
+        font-size: 9px;
+    }
+}
+@media only screen and (max-width:720px){
+    aside .sidebar .sidenav a{
+        justify-content: center;
+    }
+    aside .sidebar .sidenav a p{
+    display: none;
+}
+}
+@media only screen and (max-width:650px){
+    .container .dash-container .sales-container{
+        flex-direction: column;
+        height: 50vh;
+        gap: 20px;
+    }
+    .container .dash-container .sales-container .sales{
+        width: 100%;
+    }
+    .container .dash-container .graph{
+        flex-direction: column;
+        gap: 20px;
+        height: unset;
+        justify-content: center;
+    }
+    .container .dash-container .graph .chart{
+        height: 35vh;
+    }
+    .container .dash-container .graph > *{
+        width: 100% !important;
+    }
+    .container .dash-container .graph .resp1{
+        display: flex;
+        gap: 20px;
+    }
+    .container .dash-container .graph .day-sales img{
+        display: none;
+    }
+    .container .dash-container .graph .resp1 .day-sale img{
+        display: block;
+    }
+    .container .dash-container .graph .resp1 > *{
+        width: 50%;
+        height: 100%;
+    }
+    .day-sale{
+        width: 47% !important;
+    }
+    .container .dash-container{
+        gap: 10px;
+    }
+}

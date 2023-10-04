@@ -1,0 +1,159 @@
+@import url('https://fonts.cdnfonts.com/css/sf-pro-display');
+body{
+    margin: 0;
+    padding: 0;
+    font-family:'Times New Roman', Times, serif;
+    color: white;
+    font-family: 'SF Pro Display', sans-serif;
+    
+}
+a{
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+}
+.container{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+}
+.container img{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    opacity: 0.4;
+}
+.container img:last-of-type{
+    display: none;
+}
+.container .login-container{
+    width: 430px;
+    height: 78vh;
+    background-color: transparent;
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1;
+}
+.container .login-container .signup-text{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid black;
+    margin-bottom: 5%;
+    align-items: center;
+}
+.container .login-container .signup-text span{
+    font-size: 32px;
+}
+.container .login-container .log-item{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+    justify-content: space-between;
+}
+.container .login-container .log-item span{
+    color: #DE3341;
+}
+.container .login-container input{
+    width: 100%;
+    height: 42px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    padding-left: 5px;
+    font-size: 15px;
+    color: white;
+    background-color: #191919;
+}
+.container .login-container .birthday .date{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.container .login-container .birthday span{
+    font-size: 12px;
+}
+.container .login-container .birthday .date select{
+    width: 32%;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid transparent;
+    font-size: 15px;
+    font-weight: normal;
+    color: white;
+    background: #191919;
+}
+.container .login-container span{
+    font-size: 12px;
+}
+.container .login-container .gender input{
+    width: 10px;
+    height: 10px;
+}
+.container .login-container .gender{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: space-between;
+}
+.container .login-container .gender > *{
+    display: flex;
+    border: 1px solid #8d949e;
+    border-radius: 5px;
+    width: 32%;
+    height: 40px;
+    align-items: center;
+    background: #191919;
+    justify-content: space-between;
+}
+.container .login-container .gender .male > *{
+    margin-left: 5px;
+}
+.container .login-container .gender .female > *{
+    margin-right: 5px;
+}
+.container .login-container .gender .custom > *{
+    margin-left: 5px;
+}
+.container .login-container .last-text{
+    display: flex;
+    align-items: center;
+}
+.container .login-container .last-text input{
+    height: 18px;
+    width: 18px;
+}
+.container .login-container .last-text span{
+    color: #9a9a9a;
+}
+.container .login-container .last-text span a{
+    text-decoration: none;
+    color: white;
+}
+.submit{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.container .login-container .submit input{
+    background: #191919;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: normal;
+    cursor: pointer;
+}
+.input::placeholder{
+    color: #8d949e;
+}
+@media only screen and (max-width:500px){
+    .container > img{
+        display: none;
+    }
+    .container img:last-of-type{
+        display: block;
+    }
+}
